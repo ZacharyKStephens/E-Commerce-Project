@@ -1,0 +1,22 @@
+body{
+    font-family: 'Press Start 2P', cursive;
+}
+form {
+    width: 50%;
+    margin: 10px auto;
+    line-height: 1.2;
+  }
+  form p {
+    padding-left: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  em.error {
+    margin-left: 5px;
+    padding: 2px 4px;
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+  }

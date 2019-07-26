@@ -1,5 +1,11 @@
 body{
     font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-image: url("background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-shadow: 4px 4px 2px royalblue;
+    color: fuchsia;
 }
 form {
     width: 50%;
@@ -20,3 +26,11 @@ form {
     color: white;
     border-radius: 2px;
   }
+#codec{
+  padding-top: 50px;
+}
+footer{
+  background-image: url("/Users/zacharykalebstephens/Documents/E-Commerce-Project/footerbackground.jpg");
+  background-size: 100%;
+background-repeat: no-repeat;
+}

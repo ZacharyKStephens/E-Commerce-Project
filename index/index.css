@@ -2,6 +2,7 @@ body{
     font-family: 'Press Start 2P', cursive;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    text-shadow: 4px 4px 2px royalblue;
 }
 header{
     background-image: url("sickbackground.gif");
@@ -34,10 +35,9 @@ h2{
     text-align: center
 }
 h3{
-    padding-top: 200px;
+    padding-top: 50px;
 }
 section{
-    text-align: center;
     grid-column: 1/6;
     grid-row: 1/4;
     width: 100vw;
@@ -55,23 +55,31 @@ li{
     display: inline-block;
 }
 #nintendo{
-    background-image: url("nintendo logo.png");
+    background-image: url("SNESBackground.jpg");
     background-size: 100%;
-    height: 500px;
+    height: 600px;
     
 }
 #playstation{
-    background-image: url("ps logo.png");
+    background-image: url("PSBackground.png");
     background-size: 100%;
-    height: 500px;
+    height: 600px;
 }
 #xbox{
-    background-image: url("xbox logo.jpeg");
+    background-image: url("XBOXBackgound.jpg");
     background-size: 100%;
-    height: 500px;
+    height: 600px;
 }
 #other{
-    background-image: url("other.jpg");
+    background-image: url("OtherBackground.png");
     background-size: 100%;
-    height: 500px;
+    height: 600px;
+}
+footer{
+    text-align: center;
+    color: fuchsia;
+    background-image: url("/Users/zacharykalebstephens/Documents/E-Commerce-Project/footerbackground.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
 }

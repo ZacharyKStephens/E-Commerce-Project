@@ -1,0 +1,42 @@
+body{
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 4px 4px 2px royalblue;
+    text-align: center;
+    background-image: url("arcade.jpg") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: fuchsia;
+}
+footer{
+    text-align: center;
+    color: fuchsia;
+    background-image: url("/Users/zacharykalebstephens/Documents/E-Commerce-Project/footerbackground.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+h1{
+    padding-top: 50px;
+}
+h2{
+    font-size: 20px;
+}
+#filter{
+    border: 2px solid fuchsia;
+    background-image: url(download.jpeg)
+}
+#card{
+    border: 2px solid fuchsia;
+}
+.top{
+    color: fuchsia;
+    border-bottom: 10px solid fuchsia;
+    background-image: url("aesthetic.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 560px;
+}
+section{
+    background-image: url("sectionbackground.jpeg") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

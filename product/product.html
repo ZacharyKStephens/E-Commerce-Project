@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="product.css">
     <title>Hacking through time...</title>
   </head>
@@ -30,15 +31,21 @@
               </li>
             </ul>
           </div>
+          <form id="searchBar" class="form-inline my-2 my-lg-0">
+              <input class="MyInput" type="search" placeholder="Search" aria-label="Search" onkeyup="serachFunction">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </nav>
     <div class="top">
     <h1>Interdimensional Traveling</h1>
-    <p>Adventure through the Cosmos!</p>
+    <p>Adventure through the Cosmos.</p>
     </div>
     <section>
     <div id="class-container">
       <div class="row">
-          <div id="filter" class="col-md-3"><p>Categories</p>
+          <div id="filter" class="col-md-3">
+              
+            <p>CATEGORIES</p>
             <h2>Nintendo</h2>
               <div>
                 <ul>
@@ -66,7 +73,11 @@
                       <a><li>Merch</li></a>
                   </ul>
               </div>
-            <h2>Other</h2>
+            <h2>Computer</h2>
+            <ul>
+              <li>Games</li>
+            </ul>
+            <h2>Sega & Atari</h2>
               <div>
                   <ul>
                       <a><li>Consoles</li></a>
@@ -76,100 +87,167 @@
                     </ul>
               </div>
           </div>
-          <div class="col-md-9">
+          <div id="list" class="col-md-9">
             <h3>Nintendo</h3>
             <div class="row">
-              <div id="card" class="col-md-6"><p>NES</p></div>
-              <div id="card" class="col-md-6"><p>The Legend Of Zelda</p></div>
+              <div id="card" class="col-md-6"><img src="images/NES.png" alt="the NES console"><p>NES</p><p>The original nintendo console, responsible for some of the most recognizable characters of all time.</p><p>99.99</p>
+              </div>
+              <div id="card" class="col-md-6"><img src="images/LOZ NES.png" alt="Legend of Zelda for NES"><p>The Legend Of Zelda</p><p>The game that started a legend, THE legend, an enormously innovative game of its time</p><p>59.99</p></div>
             </div>
             <div class="row">
-              <div id="card" class="col-md-6"><p>Extensions</p></div>
-              <div id="card" class="col-md-6"><p>Merch</p></div>
+              <div id="card" class="col-md-6"><img src="images/NESZapper.png" alt="the NES Zapper controller"><p>The Zapper</p><p>an add-on controller for the NES, usable in shooting games, such as Duck Hunt</p><p>49.99</p></div>
+              <div id="card" class="col-md-6"><img src="images/NESShirt.png" alt="Novelty NES T-shirt"><p>NES Novelty Shirt</p><p>A shirt to show your history in gaming</p><p>19.99</p></div>
             </div>
             <div class="row">
-                <div id="card" class="col-md-6"><p>SNES</p></div>
-                <div id="card" class="col-md-6"><p>The Legend Of Zelda - A Link To The Past</p></div>
+                <div id="card" class="col-md-6"><img src="images/SNES.png" alt="The SNES console"><p>SNES</p><p>the highly upgraded sequel to the NES, often described as a pinnacle of sixteen bit gaming</p><p>149.99</p></div>
+                <div id="card" class="col-md-6"><img src="images/LOZALTTP.jpg" alt=" Legend Of Zeldas second sequel for SNES"><p>The Legend Of Zelda - A Link To The Past</p><p>The second sequel of the Legend of Zelda series, improving on alot of its original components</p><p>49.99</p></div>
               </div>
               <div class="row">
-                <div id="card" class="col-md-6"><p>Extensions</p></div>
-                <div id="card" class="col-md-6"><p>Merch</p></div>
+                <div id="card" class="col-md-6"><img src="images/SGBSNES.png" alt="SNES extension allowing you to play gameboy games"><p>Super GameBoy Extension</p><p>an extension for the SNES allowing the user to play GameBoy and GameBoy Color games</p><p>29.99</p></div> 
+                <div id="card" class="col-md-6"><img src="images/SNESHoodie.png" alt="A hoodie reading 'SNES University - since 1991'"><p>SNES University Novelty Hoodie</p><p>A hoodie suggesting allegiance to the SNES, comedically suggesting it as a college</p><p>24.99</p></div>
               </div>
               <div class="row">
-                  <div id="card" class="col-md-6"><p>GameBoy & GameBoy Color</p></div>
-                  <div id="card" class="col-md-6"><p>The Legend Of Zelda: Link's Awakening</p></div>
+                  <div id="card" class="col-md-6"><img src="images/gameboy.png" alt="the gameboy handheld console"><p>GameBoy & GameBoy Color</p><p>The original Nintendo handheld, and one of the most popular of all time</p><p>69.99</p></div>
+                  <div id="card" class="col-md-6"><img src="images/LOZLA.png" alt="the first of many legend of zelda gams for handheld"><p>The Legend Of Zelda: Link's Awakening</p><p>The first Zelda available on handheld built similarly to Link to the Past and the original</p><p>34.99</p></div>
                 </div>
                 <div class="row">
-                  <div id="card" class="col-md-6"><p>Extensions</p></div>
-                  <div id="card" class="col-md-6"><p>Merch</p></div>
+                  <div id="card" class="col-md-6"><img src="images/lightboy.jpg" alt="the light boy extension for gameboy"><p>Light Boy</p><p>An extension for the GameBoy taking care of the pesky backlighting issue</p><p>9.99</p></div>
+                  <div id="card" class="col-md-6"><img src="images/GameboyBag.png" alt="a gameboy themed bookbag"><p>Gameboy Pattern Bookbag</p><p> A sick bookbag bearing the visage of the gameboy in a simple pattern</p><p>14.99</p></div>
                 </div>
               <div class="row">
-                  <div id="card" class="col-md-6"><p>N64</p></div>
-                  <div id="card" class="col-md-6"><p>The Legend Of Zelda - Ocarina Of Time</p></div>
+                  <div id="card" class="col-md-6"><img src="images/N64.png" alt="the n64 console"><p>N64</p><p>One of the first 3D which set the standard for good 3D games in this new era</p><p>189.99</p></div>
+                  <div id="card" class="col-md-6"><img src="images/LOZOOT.png" alt="the box art for Ocarina of Time"><p>The Legend Of Zelda - Ocarina Of Time</p><p>The first 3D Zelda opening a whole new story for the series, featuring a series of new and bold functions</p><p>69.99</p></div>
                 </div>
                 <div class="row">
-                  <div id="card" class="col-md-6"><p>Extensions</p></div>
-                  <div id="card" class="col-md-6"><p>Replica Ocarina</p></div>
+                  <div id="card" class="col-md-6"><img src="images/n64pak.png" alt="an example of one of the many Pak extensions used on the nintendo 64"><p>N64 Pak Collection</p><p>Paks inserted in the back of a controller to improve gameplay performance</p><p>39.99</p></div>
+                  <div id="card" class="col-md-6"><img src="images/ocarinareplica.png" alt="a replica of the Ocarina of Time"><p>Replica Ocarina</p></div>
                 </div>
+                <div class="row">
+                    <div id="card" class="col-md-6"><img src="images/GameCube.png" alt="the Gamecube console"><p>GameCube</p></div>
+                    <div id="card" class="col-md-6"><img src="images/windwaker.jpg" alt="Wind Waker's box art"><p>The Legend Of Zelda - Wind Waker</p></div>
+                  </div>
+                  <div class="row">
+                    <div id="card" class="col-md-6"><img src="images/gameboyplayer.png" alt="An extension allowing the GameCube to play GameBoy Advance games"><p>Game Boy Player</p></div>
+                    <div id="card" class="col-md-6"><img src="images/Makar.png" alt="a plush of Makar from Wind Waker"><p>Makar Plush</p></div>
+                  </div>
+                  <div class="row">
+                      <div id="card" class="col-md-6"><img src="images/gba.png" alt="the gameboy advance handheld console"><p>GameBoy Advance</p></div>
+                      <div id="card" class="col-md-6"><img src="images/MinishCap.jpg" alt="the box art of the minish cap"><p>The Legend Of Zelda - The Minish Cap</p></div>
+                    </div>
+                    <div class="row">
+                      <div id="card" class="col-md-6"><img src="images/play-yan.jpg" alt="an extension of the gba allowing it to play mp3 and mpeg-4 files"><p>Play-Yan</p></div>
+                      <div id="card" class="col-md-6"><img src="images/gbaposter.jpg" alt="a poster of the inner working of the gba"><p>GBA Poster</p></div>
+                    </div>
             <h3>Playstation</h3>
             <div class="row">
-              <div id="card" class="col-md-6"><p>Playstation</p></div>
-              <div id="card" class="col-md-6"><p>Metal Gear Solid</p></div>
+              <div id="card" class="col-md-6"><img src="images/PS1.png" alt="the original playstation console"><p>Playstation</p></div>
+              <div id="card" class="col-md-6"><img src="images/MGS.png" alt="Metal Gear Solid CD case"><p>Metal Gear Solid</p></div>
             </div>
             <div class="row">
-              <div id="card" class="col-md-6"><p>Extensions</p></div>
-              <div id="card" class="col-md-6"><p>Merch</p></div>
+              <div id="card" class="col-md-6"><img src="images/ps1memory.webp" alt="a memory card for the ps1"><p>Memory Card</p></div>
+              <div id="card" class="col-md-6"><img src="images/foxhoundpatch.png" alt="A patch resembling the logo of the spec ops group from MGS"><p>Foxhound Patch</p></div>
             </div>
             <div class="row">
-                <div id="card" class="col-md-6"><p>Playstation 2</p></div>
-                <div id="card" class="col-md-6"><p>Metal Gear Solid 3</p></div>
+                <div id="card" class="col-md-6"><img src="images/PS2.png" alt="the playstation 2 console"><p>Playstation 2</p></div>
+                <div id="card" class="col-md-6"><img src="images/MGS3SE.jpg" alt="MGS3 box art"><p>Metal Gear Solid 3</p></div>
               </div>
               <div class="row">
-                <div id="card" class="col-md-6"><p>Extensions</p></div>
-                <div id="card" class="col-md-6"><p>Merch</p></div>
+                <div id="card" class="col-md-6"><img src="images/ps2steering.png" alt="a steering wheel for racing games"><p>Extensions</p></div>
+                <div id="card" class="col-md-6"><img src="images/ps2jacket.png" alt="a bomber jacket sporting the logo popularized by the ps2"><p>PS2 Bomber Jacket</p></div>
               </div>
             <h3>Xbox</h3>
             <div class="row">
-                <div id="card" class="col-md-6"><p>Xbox</p></div>
-                <div id="card" class="col-md-6"><p>Halo</p></div>
+                <div id="card" class="col-md-6"><img src="images/Xbox.webp" alt="the XBOX original Console"><p>Xbox Original</p></div>
+                <div id="card" class="col-md-6"><img src="images/halo.png" alt="the box art for the first Halo"><p>Halo: Combat Evolved</p></div>
               </div>
               <div class="row">
-                <div id="card" class="col-md-6"><p>Extensions</p></div>
-                <div id="card" class="col-md-6"><p>Merch</p></div>
+                <div id="card" class="col-md-6"><img src="images/xboxremote.octet-stream" alt="the xbox original dvd remote"><p>XBOX DVD Remote</p></div>
+                <div id="card" class="col-md-6"><img src="images/xbox beanie.png" alt="an xbox themed beanie"><p>XBOX Beanie</p></div>
               </div>
-              <h3>Other</h3>
+              <h3>Computer Games</h3>
               <div class="row">
-                <div id="card" class="col-md-6"><p>Atari</p></div>
-                <div id="card" class="col-md-6"><p>Games</p></div>
-              </div>
-              <div class="row">
-                <div id="card" class="col-md-6"><p>Extensions</p></div>
-                <div id="card" class="col-md-6"><p>Merch</p></div>
-              </div>
-              <div class="row">
-                  <div id="card" class="col-md-6"><p>Sega</p></div>
-                  <div id="card" class="col-md-6"><p>Games</p></div>
+                  <div id="card" class="col-md-6"><img src="images/lsl.jpg" alt="the leisure suit larry series"><p>Leisure Suit Larry</p></div>
+                  <div id="card" class="col-md-6"><img src="images/space quest.jpg" alt="the space quest series"><p>Space Quest</p></div>
                 </div>
                 <div class="row">
-                  <div id="card" class="col-md-6"><p>Extensions</p></div>
-                  <div id="card" class="col-md-6"><p>Merch</p></div>
-                </div>
-                <div class="row">
-                    <div id="card" class="col-md-6"><p>Commodore 64</p></div>
-                    <div id="card" class="col-md-6"><p>Games</p></div>
+                    <div id="card" class="col-md-6"><img src="images/kings quest.jpg" alt="the king's quest series"><p>King's Quest</p></div>
+                    <div id="card" class="col-md-6"><img src="images/monkey island.jpg" alt="the monkey island series"><p>Monkey Island</p></div>
                   </div>
                   <div class="row">
-                    <div id="card" class="col-md-6"><p>Extensions</p></div>
-                    <div id="card" class="col-md-6"><p>Merch</p></div>
+                      <div id="card" class="col-md-6"><img src="images/blade runner.jpg" alt="the blade runner game"><p>Blade Runner</p></div>
+                      <div id="card" class="col-md-6"><img src="images/lego island.jpg" alt="the first lego game"><p>Lego Island</p></div>
+                    </div>
+          
+              <h3>Sega & Atari</h3>
+              <div class="row">
+                <div id="card" class="col-md-6"><img src="images/atari2600.png" alt="the atari 2600 console"><p>Atari 2600</p></div>
+                <div id="card" class="col-md-6"><img src="images/spaceinvaders.jpg"><p>Space Invaders</p></div>
+              </div>
+              <div class="row">
+                  <div id="card" class="col-md-6"><img src="images/sg-100.png" alt="segas first consle"><p>Sega SG-1000</p></div>
+                  <div id="card" class="col-md-6"><img src="images/flicky.jpg" alt="one of the few games available for th sg-1000"><p>Flicky</p></div>
+                </div>
+                <div class="row">
+                  <div id="card" class="col-md-6"><img src="images/mastersystem.png" alt="Segas master system console"><p>Sega Master System</p></div>
+                  <div id="card" class="col-md-6"><img src="images/AlexKiddInMiracleWorldBox.jpg" alt="segas first mascots game"><p>Alex Kidd</p></div>
+                </div>
+                <div class="row">
+                    <div id="card" class="col-md-6"><img src="images/genesis.png" alt="segas most succesful consle"><p>Sega Genesis</p></div>
+                    <div id="card" class="col-md-6"><img src="images/sonic.jpg" alt="segas most famous characters debut"><p>Sonic The Hedgehog</p></div>
                   </div>
+                  <div class="row">
+                    <div id="card" class="col-md-6"><img src="images/segacd.png" alt="Segas cd extension for the genesis"><p>Sega CD extension</p></div>
+                    <div id="card" class="col-md-6"><img src="images/soniccd.jpg" alt="the sonic remake for CD"><p>Sonic CD</p></div>
+                  </div>
+                  <div class="row">
+                      <div id="card" class="col-md-6"><img src="images/gamegear.png" alt="segas handheld"><p>Sega Game Gear</p></div>
+                      <div id="card" class="col-md-6"><img src="images/sonicchaos.jpg" alt="a sonic sequel for the handheld"><p>Sonic Chaos</p></div>
+                    </div>
+                    <div class="row">
+                      <div id="card" class="col-md-6"><img src="images/segasaturn.png" alt="Segas first majorly unsuccesful console"><p>Sega Saturn</p></div>
+                      <div id="card" class="col-md-6"><img src="images/sonic3d.jpg" alt="the first 3d sonic"><p>Sonic 3D Blast</p></div>
+                    </div>
+                    <div class="row">
+                        <div id="card" class="col-md-6"><img src="images/dreamcast.png" alt="segas final console"><p>Sega Dreamcast</p></div>
+                        <div id="card" class="col-md-6"><img src="images/sonicadventure.jpg" alt="the first sonic with a 3rd person from behind perspective"><p>Sonic Adventure</p></div>
+                       </div>
           </div>
         </div>
     </div>
     
 <aside></aside>
-  <footer>Retro Renaissance does not claim ownership or creative rights over any of the intellectual properties displayed on our website, and supercede to the original creators/owners. Thanks for not suing us into next year, love ya.
+  <footer>
+      <p>
+          <audio autoplay controls loop>
+              <source src="HorseSteppin.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          <a href="https://www.facebook.com/zach.stephens.102" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/JFables" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com/teriyaki_god_z/?hl=en" class="fa fa-instagram"></a>
+        </p>
+    Retro Renaissance does not claim ownership or creative rights over any of the intellectual properties displayed on our website, and supercede to the original creators/owners. Thanks for not suing us into next year, love ya.
       Retro Renaissance &trade; 2019.  </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+      function myFunction() {
+    var input, filter, ul, li, a, i, h ,txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("list");
+    div = ul.getElementsByClassName("row");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsClassName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+    </script>
   </body>
 </html>
